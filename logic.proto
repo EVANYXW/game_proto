@@ -1,0 +1,12 @@
+syntax = "proto3";
+package msg;
+
+option go_package = "./msg";
+option java_package = "./msg";
+option java_multiple_files = true;
+import "common.proto";
+
+
+service LogicService {
+  rpc Test(Req) returns (Res){}
+}
