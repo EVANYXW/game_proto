@@ -1,2 +1,2 @@
 build:
-	 protoc --go_out=. --proto_path=.  --go-grpc_out=. *.proto
+	 cd protos && protoc --go_out=. --proto_path=.  --go-grpc_out=. *.proto

@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package  messageId;
+
+option go_package = "../msg/messageId;messageId";
+option java_package = "../msg";
+option java_multiple_files = true;
+
+enum MessageId {
+  None =0;
+
+  CSCreatePlayer=50001;
+  SCCreatePlayer=50002;
+  CSLogin=50003;
+  SCLogin=50004;
+
+  //player
+  CSAddFriend=100001;
+  SCAddFriend=100002;
+  CSDelFriend=100003;
+  SCDelFriend=100004;
+  CSSendChatMsg=100005;
+  SCSendChatMsg=100006;
+
+
+  ClientRequestObjectSync= 200010;
+  ServerRequestObjectSync= 200011;
+  ServerRequestObjectSyncComplete= 200012;
+  Instantiate= 200020;
+  Destroy= 200021;
+  DestroyNetworkObjects= 200022;
+  SyncTransform= 200030;
+}
